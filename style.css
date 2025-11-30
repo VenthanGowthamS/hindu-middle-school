@@ -72,12 +72,26 @@ ul {
 }
 
 .logo {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 700;
     color: var(--primary-color);
     display: flex;
     align-items: center;
     gap: 10px;
+}
+
+.nav-founder-img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--secondary-color);
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
 }
 
 .nav-links {
@@ -229,16 +243,45 @@ ul {
     background: var(--white);
     padding: 30px;
     border-radius: 10px;
+    backdrop-filter: blur(5px);
     box-shadow: var(--shadow);
-    text-align: center;
-    transition: var(--transition);
+    text-align: left;
 }
 
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-gap: 30px;
-text-align: center;
-margin-bottom: 40px;
+.about-card h3 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: var(--primary-color);
+}
+
+.about-card .icon {
+    display: block;
+    font-size: 2rem;
+    object-position: top;
+}
+
+.management-list {
+    text-align: left;
+    margin-top: 15px;
+}
+
+.management-list li {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+}
+
+.management-list li:last-child {
+    border-bottom: none;
+}
+
+/* Stats Section */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    text-align: center;
+    margin-bottom: 40px;
 }
 
 .stat-item {
@@ -246,6 +289,7 @@ margin-bottom: 40px;
     padding: 30px;
     border-radius: 10px;
     backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .stat-number {
@@ -330,25 +374,6 @@ margin-bottom: 40px;
     height: 300px;
     background: #e9ecef;
     border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.map-placeholder {
-    text-align: center;
-    color: var(--text-light);
-}
-
-.map-placeholder i {
-    font-size: 3rem;
-    margin-bottom: 10px;
-}
-
-/* Footer */
-footer {
-    background: #111;
-    color: #aaa;
     text-align: center;
     padding: 20px 0;
     font-size: 0.9rem;
