@@ -18,6 +18,10 @@ Static site for Hindu Middle School, Pannaipuram (est. 1942). No build step, no 
 - Gallery uses placeholder tiles; replace each with `<figure class="gallery-item"><img src="..." alt="..." loading="lazy"></figure>`. Use WebP, ~1200px max.
 - Keep the founding year (1942) consistent across `<title>`, meta/OG tags, JSON-LD, hero, and timeline.
 
+## Live site
+
+GitHub Pages from `main` / root: https://venthangowthams.github.io/hindu-middle-school/ (og:image and canonical use this absolute URL — update them if a custom domain is added).
+
 ## Local preview
 
 `.claude/launch.json` runs `npx serve` on port 8000 for the Claude preview tool.
